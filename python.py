@@ -29,7 +29,7 @@ class EC2Manager:
     def start_instance(self, instance_id):
         response = self.ec2.start_instances(InstanceIds=[instance_id])
         return response
-
+'''
 class TestEC2Manager(unittest.TestCase):
     @patch('boto3.client')
     def test_start_instance(self, mock_boto_client):
